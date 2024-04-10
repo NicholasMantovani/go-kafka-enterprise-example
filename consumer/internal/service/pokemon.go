@@ -1,4 +1,4 @@
-package sevice
+package service
 
 import (
 	"context"
@@ -12,7 +12,7 @@ type PokemonServiceImpl struct {
 	logger  *zap.Logger
 }
 
-func New(queries *database.Queries, logger *zap.Logger) *PokemonServiceImpl {
+func NewPokemonServiceImpl(queries *database.Queries, logger *zap.Logger) *PokemonServiceImpl {
 	return &PokemonServiceImpl{queries: queries, logger: logger}
 }
 
